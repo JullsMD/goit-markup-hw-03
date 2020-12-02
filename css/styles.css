@@ -380,7 +380,7 @@ p {
   margin-bottom: 0;
 }
 
-.cards-about {
+/* .cards-about {
   padding: 63px 24px;
 
   font-size: 18px;
@@ -388,7 +388,7 @@ p {
 
   background-color: var(--accent-color);
   color: var(--primary-background-color);
-}
+} */
 .card-img {
   display: block;
 }
