@@ -18,6 +18,8 @@ color: #f5f4fa; - бэк неактивной кнопки фильтра в п�
   --footer-text-color: rgba(255, 255, 255, 0.6);
   --background-team-btn: #f5f4fa;
   --border-card: #eeeeee;
+
+  --casd-set-gap: 30px;
 }
 
 body {
@@ -370,15 +372,15 @@ p {
   padding-bottom: 94px;
   padding-left: 0;
 
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-top: -1 * var(--casd-set-gap);
+  margin-left: -1 * var(--casd-set-gap);
 }
 
 .card-set > .item {
-  flex-basis: calc(100% / 3 -30px);
+  flex-basis: calc(100% / 3 - 1 * var(--casd-set-gap));
 
-  margin-top: 30px;
-  margin-left: 30px;
+  margin-top: var(--casd-set-gap);
+  margin-left: var(--casd-set-gap);
 }
 
 /* .cards-about {
@@ -390,21 +392,28 @@ p {
   background-color: var(--accent-color);
   color: var(--primary-background-color);
 } */
+
+/* Card */
+.card {
+  border: 1px solid var(--border-card);
+
+  overflow: hidden;
+}
 .card-img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .card-description {
-  padding: 20px 24px;
-
-  border: 1px solid var(--border-card);
+  padding: 20px 24px;x
 }
-.cards-title {
+.card-title {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.cards-text {
+.card-text {
   margin-top: 4px;
 
   font-size: 16px;
